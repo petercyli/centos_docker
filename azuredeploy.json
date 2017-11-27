@@ -69,7 +69,7 @@
     "virtualNetworkName": "MyVNET",
     "vnetID": "[resourceId('Microsoft.Network/virtualNetworks',variables('virtualNetworkName'))]",
     "subnetRef": "[concat(variables('vnetID'),'/subnets/',variables('subnetName'))]",
-    "artifactBaseUrl": "https://raw.githubusercontent.com/hansenms/centos_docker/master/",
+    "artifactBaseUrl": "https://raw.githubusercontent.com/petercyli/centos_docker/master/",
     "runDockerScriptUrl": "[concat(variables('artifactBaseUrl'), 'run_docker.sh')]"
   },
   "resources": [
