@@ -13,6 +13,3 @@ chmod +x docker-compose
 systemctl start docker
 
 docker run --detach --restart unless-stopped -p $docker_ports -d $docker_image
-
-docker pull osehra/osehravista
-docker run -p 9430:9430 -p 8001:8001 -p 2222:22 -d -P --name=osehravista osehra/osehravista
